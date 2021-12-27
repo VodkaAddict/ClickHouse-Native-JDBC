@@ -19,7 +19,7 @@
 
     <groupId>com.github.housepower</groupId>
     <artifactId>clickhouse-native-jdbc-parent</artifactId>
-    <version>2.7.0-SNAPSHOT</version>
+    <version>zendata-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>ClickHouse Native JDBC POM</name>
@@ -68,10 +68,10 @@
     </modules>
 
     <properties>
-        <deploy.repo.snapshots.id>sonatype-nexus-snapshots</deploy.repo.snapshots.id>
-        <deploy.repo.snapshots.url>https://oss.sonatype.org/content/repositories/snapshots</deploy.repo.snapshots.url>
-        <deploy.repo.release.id>sonatype-nexus-staging</deploy.repo.release.id>
-        <deploy.repo.release.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</deploy.repo.release.url>
+<!--        <deploy.repo.snapshots.id>sonatype-nexus-snapshots</deploy.repo.snapshots.id>-->
+<!--        <deploy.repo.snapshots.url>https://oss.sonatype.org/content/repositories/snapshots</deploy.repo.snapshots.url>-->
+<!--        <deploy.repo.release.id>sonatype-nexus-staging</deploy.repo.release.id>-->
+<!--        <deploy.repo.release.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</deploy.repo.release.url>-->
 
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -123,16 +123,16 @@
         <ClickHouseHTTPPort>8123</ClickHouseHTTPPort>
     </properties>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>${deploy.repo.snapshots.id}</id>
-            <url>${deploy.repo.snapshots.url}</url>
-        </snapshotRepository>
-        <repository>
-            <id>${deploy.repo.release.id}</id>
-            <url>${deploy.repo.release.url}</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <snapshotRepository>-->
+<!--            <id>${deploy.repo.snapshots.id}</id>-->
+<!--            <url>${deploy.repo.snapshots.url}</url>-->
+<!--        </snapshotRepository>-->
+<!--        <repository>-->
+<!--            <id>${deploy.repo.release.id}</id>-->
+<!--            <url>${deploy.repo.release.url}</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 
     <dependencyManagement>
         <dependencies>
